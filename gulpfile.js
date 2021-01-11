@@ -29,6 +29,7 @@ function styles() {
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 version"],
+        grid: true,
       })
     )
     .pipe(dest("app/css"))
