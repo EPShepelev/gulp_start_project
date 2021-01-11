@@ -1,0 +1,16 @@
+{
+  "name": "gulp_start_project",
+  "version": "1.0.0",
+  "description": "my gulp build for frontend projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "js",
+    "frontend"
+  ],
+  "author": "Shepelev Evgeniy <shepelev.ep@yandex.ru>",
+  "license": "ISC"
+}
