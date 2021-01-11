@@ -36,6 +36,18 @@ function styles() {
     .pipe(browserSync.stream({ match: "**/*.css" }));
 }
 
+function build() {
+  return src(
+    [
+      "app/css/style.min.css",
+      "app/fonts/**/*",
+      "app/js/main.min.js",
+      "app/*.html",
+    ],
+    { base: "app" }
+  ).pipe(dest("dist"));
+}
+
 function watching() {
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
@@ -46,5 +58,6 @@ exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
+exports.build = build;
 
 exports.default = parallel(browsersync, watching, scripts);
