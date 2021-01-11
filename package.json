@@ -12,5 +12,8 @@
     "frontend"
   ],
   "author": "Shepelev Evgeniy <shepelev.ep@yandex.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
